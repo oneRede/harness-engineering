@@ -31,10 +31,10 @@ description: 把一批 Harness Engineering 调研候选（文章/论文/工具�
 ```
 
 ### ① 抓取
-用 `baoyu-url-to-markdown` 把每个 URL 存到 `sources/<slug>/source.md`。**论文/长文必须额外抓 HTML 全文到 `source-full.md`**（否则只有摘要页，C8 会拦谎报）。
+用 `baoyu-url-to-markdown` 把每个 URL 存到 `sources/<slug>/source.md`。**论文/长文必须额外抓 HTML 全文到 `source-full.md`**（否则只有摘要页，C8 会拦谎报）,必须采用`baoyu-url-to-markdown`获取原文，如果有问题征求人类意见再处理。
 
 ### ② 翻译
-按 baoyu-translate 配置生成 `translations/<slug>/` 三件套 → `works-ready/<slug>-translation.md`。`01-analysis.md` 要含收录建议；`source-full.md` 存在时，分析稿不得声称「仅摘要页」。
+按 baoyu-translate 配置生成 `translations/<slug>/` 三件套 → `works-ready/<slug>-translation.md`。`01-analysis.md` 要含收录建议；`source-full.md` 存在时，分析稿不得声称「仅摘要页」，必须使用baoyu-translate翻译，如果有问题征求人类意见再处理。
 
 ### ③ 评审（全自动并行扇出）
 对每篇候选派一个评审 agent（一批 3–4 篇，并行多个 agent）。统一打分维度，吐结构化定性。**标准评审 prompt 模板：**
