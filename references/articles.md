@@ -10,7 +10,7 @@
 > **下游引用都是本文的冗余缓存：** 根 `README.md` / `README.en.md` 的 badge、`prompts/deep-research-tracker.md` 的去重清单、`references/AGENTS.md` 的概览表。
 > 新增/删除文章时，必须**同一次提交**更新本文 + 所有下游缓存。
 >
-> 当前规模：**61 篇文章**（脉络一 57 + 脉络二 2 + 脉络三 2）+ **1 项已跟踪产品**（不计入文章数）。最近一次同步：2026-07-22。
+> 当前规模：**66 篇文章**（脉络一 62 + 脉络二 2 + 脉络三 2）+ **1 项已跟踪产品**（不计入文章数）。最近一次同步：2026-07-27。
 
 ## 脉络一：AI 时代的 Harness Engineering（大模型护栏与认知工程）
 
@@ -1674,6 +1674,139 @@
 
 ---
 
+<a id="article-62"></a>
+
+### 62. Anthropic — Claude 5 代模型的上下文工程新规则
+
+- **标题：** The new rules of context engineering for Claude 5 generation models
+- **链接：** [anthropic.com](https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models)
+- **翻译：** [works/anthropic-context-engineering-new-rules-translation.md](../works/anthropic-context-engineering-new-rules-translation.md)
+- **作者：** Thariq Shihipar (Anthropic MTS) | **日期：** 2026-07-24
+- **核心：** Anthropic 为 Claude 5 代模型删除了超过 80% 的 Claude Code 系统提示。核心转变："Unhobbling Claude"——过度约束反而成为噪音，更强模型需要更少规则，应信任其判断力。三大迷思被打破：(1) "始终提供详细示例" → 模型可自行推断格式；(2) "越多约束越好" → 冲突指令浪费推理预算；(3) "所有上下文必须在前面" → 渐进式披露（Skills/References）更有效。新规则：审计系统提示删除冗余、用 Skills 而非系统提示、用 References 而非内联上下文、引入 `claude doctor` 命令自动简化。
+
+- **关键观点：**
+  - **从规则到判断力**：不再需要详尽的 DO/DON'T 列表，模型能理解意图并使用周围上下文做决策
+  - **工具爆炸导致指令冲突**：系统 prompt、Skills、CLAUDE.md 和用户请求经常互相矛盾，模型需要额外推理才能解决冲突
+  - **新工具取代文档依赖**：现在有 memory、artifacts、skills，CLAUDE.md 不再是唯一的记忆来源
+  - **`/doctor` 命令**：自动检测并精简过度约束的 Skills 和 CLAUDE.md
+
+- **与其他文章的关联：**
+
+| 本文概念 | 对应文章 |
+|---------|---------|
+| Unhobbling Claude（解除束缚） | #2 Fowler "约束越严，自主性越强"的反向演化 |
+| 删除 80% 系统 prompt | #7 Managed Agents "harness 假设会过时" |
+| 渐进式披露（Skills/References） | #6 Anthropic "progressive disclosure" |
+| 过度约束成为噪音 | #4 Anthropic "Context Anxiety" 的新表现形式 |
+
+---
+
+<a id="article-63"></a>
+
+### 63. Anthropic — 如何保障 AI 原生软件开发生命周期的安全
+
+- **标题：** How Anthropic secures its AI-native software development lifecycle
+- **链接：** [anthropic.com](https://claude.com/blog/how-anthropic-secures-its-ai-native-software-development-lifecycle)
+- **翻译：** [works/anthropic-ai-native-sdlc-security-translation.md](../works/anthropic-ai-native-sdlc-security-translation.md)
+- **作者：** Jason Clinton (Deputy CISO, Anthropic) | **日期：** 2026-07-21
+- **核心：** Anthropic 内部 80% 代码由 AI 编写，50%+ 由 Claude Tag 直接合并。当代码速度提升 8 倍时，安全流程必须同步扩展，否则根据阿姆达尔定律成为瓶颈（这不是理论——Anthropic 亲身经历过）。三类威胁模型：(1) 被入侵或被注入提示词的智能体；(2) 供应链和依赖投毒；(3) 传统应用漏洞的高容量。四大安全策略：左移集成（PSR 自动化、IDE 内实时扫描）、硬边界限制爆炸半径、确定性与智能体评审结合、在最高杠杆点插入人类。将智能体视为新型内部威胁，监控循环而非漏洞。
+
+- **关键数据：**
+  - **80% 代码由 AI 编写**，其中 50%+ 由 Claude Tag 直接合并
+  - **8 倍代码速度提升**（每季度交付量是 2021-2025 年间的 8 倍）
+  - **最早的安全自动化**：Claude Opus 驱动的 PSR (Project Security Review) web 应用，根据 MITRE ATT&CK 框架分析设计文档
+
+- **与其他文章的关联：**
+
+| 本文概念 | 对应文章 |
+|---------|---------|
+| 速度悖论（8x 代码 vs 安全瓶颈） | #60 YDD 效率悖论的安全维度 |
+| 将智能体视为内部威胁 | #7 Managed Agents "大脑与双手解耦" |
+| 左移安全 | #2 Fowler "计算性传感器"的安全实例 |
+| 智能体行为监控 | #10 LangChain "loop 就是可观察的" |
+
+---
+
+<a id="article-64"></a>
+
+### 64. Anthropic — 如何使用 Claude Code 运行大规模代码迁移
+
+- **标题：** How Anthropic runs large-scale code migrations with Claude Code
+- **链接：** [anthropic.com](https://claude.com/blog/ai-code-migration)
+- **翻译：** [works/anthropic-code-migration-translation.md](../works/anthropic-code-migration-translation.md)
+- **作者：** Anthropic | **日期：** 2026-07-16
+- **核心：** Bun 从 Zig 迁移到 Rust（100 万行代码）的完整 playbook，11 天完成，成本 $165k API。核心洞察：**你不修代码，你修产出代码的流程（循环）**。六步流程：(1) 创建规则手册、依赖映射和差距清单；(2) 在小批量上测试循环；(3) 翻译所有内容（多智能体并行）；(4) 编译；(5) 冒烟测试；(6) 匹配行为（运行测试套件）。"修流程不修代码"纪律：发现问题时优先改进 migration rules 和 workflow 脚本，而非手动修补单个文件。峰值 64 Claude 并发，5.9B uncached input tokens + 690M output tokens。
+
+- **关键数据：**
+  - **Bun 迁移**：100 万行 Zig→Rust，11 天，$165k API 成本
+  - **Mike Krieger 迁移**：16.5 万行 Python→TypeScript，一个周末
+  - **经济学转折点**：百万行迁移从"4 年 + $3-4M"变为"11 天 + $165k"
+
+- **与其他文章的关联：**
+
+| 本文概念 | 对应文章 |
+|---------|---------|
+| 修流程不修代码 | #41 Loop Engineering、#44 Self-Harness（自我修正的循环） |
+| 对抗性评审 | #32 Fowler "独立评审者" |
+| 动态 workflow 并行迁移 | #36 Anthropic Dynamic Workflows |
+| 规则手册持续增长 | #20 Fowler SPDD "规范即活文档" |
+
+---
+
+<a id="article-65"></a>
+
+### 65. James C. Davis et al. — 廉价代码，昂贵判断：可治理智能体软件工程的案例研究
+
+- **标题：** Cheap Code, Costly Judgment: A Case Study on Governable Agentic Software Engineering
+- **链接：** [arxiv.org](https://arxiv.org/abs/2607.01087v2)
+- **翻译：** [works/arxiv-cheap-code-costly-judgment-translation.md](../works/arxiv-cheap-code-costly-judgment-translation.md)
+- **作者：** James C. Davis, Paschal C. Amusuo, Tanmay Singla, Berk Çakar, Kirsten A. Davis | **日期：** 2026-07-01 (v1), 2026-07-04 (v2)
+- **核心：** 生成式 AI 将软件工程从"稀缺的实现努力"转向"充足的低成本代码生产"，核心工程问题从"AI 能否生成代码"转向"如何组织架构、工具、证据和反馈循环使其可检查、可纠正、可维护"。12 周第一人称案例研究（单个专家工程师），提出**治理转换（governance conversion）**理论：高速智能体实现暴露反复出现的结构性失败类别，工程判断通过将失败转换为持久的治理机制来维持速度。与现有治理模型从已知义务推导控制不同，治理转换解释如何从仅在智能体工作中可见的失败中发现控制。
+
+- **关键贡献：**
+  - **首篇以"可治理性（Governability）"为核心**的 AI-native SE 论文
+  - **治理转换理论**：失败 → 工程判断 → 持久治理机制
+  - **12 周实证数据**：88 份现场笔记、42 万行生产代码、116 万行测试和支持文档
+
+- **与其他文章的关联：**
+
+| 本文概念 | 对应文章 |
+|---------|---------|
+| 廉价代码，昂贵判断 | #1 OpenAI "Code is free, attention is scarce" |
+| 可治理性三要素（可检查/可纠正/可维护） | #2 Fowler Guides×Sensors 框架 |
+| 治理转换（失败→控制） | #41 Loop Engineering "循环发现并修复自身" |
+| AI-native SDLC | #63 Anthropic AI-native 安全架构 |
+
+---
+
+<a id="article-66"></a>
+
+### 66. Vladislav Zhukov — AI 智能体的上下文工程
+
+- **标题：** Context Engineering for AI Agents
+- **链接：** [vzhukov.dev](https://vzhukov.dev/posts/2026/context-engineering-for-ai-agents)
+- **翻译：** [works/zhukov-context-engineering-translation.md](../works/zhukov-context-engineering-translation.md)
+- **作者：** Vladislav Zhukov | **日期：** 2026-07-18
+- **核心：** Context engineering 是"few-shot prompting 长大后遇见软件工程"。从分类器的"选哪 20 个例子"到 agent 的"模型现在应该看到什么"，问题本质相同但表面更大、更脆弱。上下文不仅是 RAG 检索的文档，还包括系统指令、few-shot 示例、工具 schema、工具输出、对话历史、记忆、压缩、轨迹反馈。实践维度：选择示例（硬示例挖掘）、检索策略（动态 vs 预检索）、工具和 MCP、记忆管理（陈旧记忆比没有记忆更危险）、压缩和总结、前缀缓存。**上下文是构建的，不是附加的**。核心问题："模型现在应该看到什么？"如果能有意识地回答、记录并衡量，你就在做 context engineering。
+
+- **关键洞察：**
+  - **从 few-shot 到 agent context 的演化路径**：问题本质未变，表面更大
+  - **陈旧记忆比没有记忆更危险**：错误的权威来源
+  - **前缀缓存权衡**：更好的缓存命中 vs 更相关的上下文
+  - **上下文管道**：任务 → 检索示例 → 检索文档 → 检索记忆 → 组装上下文 → 渲染消息 → 调用模型
+
+- **与其他文章的关联：**
+
+| 本文概念 | 对应文章 |
+|---------|---------|
+| Few-shot → Context Engineering 演化 | #62 Anthropic "渐进式披露" |
+| 工具 schema 即上下文 | #6 Anthropic "MCP 提供商定义可见内容" |
+| 记忆过期与置信度 | #4 Anthropic "Context Anxiety" |
+| 压缩策略 | #3 LangChain "Context Rot" |
+| 前缀缓存优化 | Anthropic 官方文档 |
+
+---
+
 ## 两条脉络的关系
 
 ```
@@ -1696,7 +1829,7 @@ Harness Engineering（AI 护栏）     Harness.io（交付管线）
 ## 中文转译 / 二手资料（不计入文章数）
 
 > 这里收录的是**他人已发布的中文译介或二手综述**——本仓库做了归档但**不视为一手文献**。
-> 本段不参与 `### N. ...` 的全局编号，不计入 61 篇文章总数；与上方编号正文严格区分，避免污染脉络计数。
+> 本段不参与 `### N. ...` 的全局编号，不计入 66 篇文章总数；与上方编号正文严格区分，避免污染脉络计数。
 > 收录标准：内容与 Harness Engineering 直接相关、来源可追溯到具名作者 / 译者、且对本仓库已有一手文献有补充或对照价值。
 
 ### Akshay Pachaar — The Anatomy of an Agent Harness（中译版）
@@ -1749,7 +1882,7 @@ Harness Engineering（AI 护栏）     Harness.io（交付管线）
 
 ## 已跟踪产品 / 项目（不计入文章数）
 
-> 这里收录的是**开源产品 / 框架 / 工具**，不是文章。本段不参与"### N. ..." 的全局编号，不计入 61 篇的文章总数。
+> 这里收录的是**开源产品 / 框架 / 工具**，不是文章。本段不参与"### N. ..." 的全局编号，不计入 66 篇的文章总数。
 > 触发"产品级实现案例"的判定通常是：有可运行代码、有版本号、被本仓库 thinking/ 或 works/ 单独分析。
 
 ### ⭐ Chachamaru127 — claude-code-harness v4.2 "Hokage"（产品级实现案例）
@@ -1777,7 +1910,7 @@ Harness Engineering（AI 护栏）     Harness.io（交付管线）
 
 ## 观察项 / 候选材料（不计入文章数）
 
-> 2026-05 起各轮调研中已甄别、但**暂不值得做成正式文章**的产品页 / README / 短 bliki / 发布稿 / 工程随笔。本段不参与 `### N.` 编号，不计入 61 篇文章总数。
+> 2026-05 起各轮调研中已甄别、但**暂不值得做成正式文章**的产品页 / README / 短 bliki / 发布稿 / 工程随笔。本段不参与 `### N.` 编号，不计入 66 篇文章总数。
 > 中文译文留在本地 `translate/`（gitignored）作阅读辅助；下表只记上游链接与定性，方便下次快速复看。
 > **去向标记：** 🔵 待实测后入 `tools/`（遵守 tools/「只收用过的工具」标准，未实测前不正式收录） ｜ ⚪ 长期观察 ｜ ⏭️ 暂存不收。
 
@@ -1826,5 +1959,8 @@ Harness Engineering（AI 护栏）     Harness.io（交付管线）
 | Iusztin：What's Harness Engineering | 科普 | ⚪ | "模型商品化 → harness 是你该拥有的那层" + build/buy/customize 三分与开源中间地带（Pydantic AI Harness / Pi / Deep Agents）；面向非工程读者的定调文，论点已被 #1/#3/#31 覆盖，2026-07-21 | [read.technically.dev](https://read.technically.dev/p/whats-harness-engineering) |
 | Sparsh Agarwal：Control Surface | 工程随笔 | ⚪ | Scaffolding（首条消息前装配）vs Harness（会话中运行）二分 + "allowed claim / proof" 治理词汇 + 开工前六问清单；术语有用、无一手数据，2026-07-09 | [medium](https://medium.com/recohut-ai-labs/harness-engineering-the-control-surface-around-coding-agents-a907bc310eee) |
 | OpenAI Agents SDK 演进 | 产品文 | ⚪ | 官方 SDK 侧的"harness 与 compute 分离"定式：凭据不进模型代码执行环境 + snapshot/rehydration 断点续跑 + Manifest 工作区契约；与 #7 brain/hands、#40 HaaS、#50 遏制互证；发布稿体裁，2026-04-15（存量回扫补录），配套 [Claude→OpenAI SDK 迁移指南](https://developers.openai.com/cookbook/examples/agents_sdk/migrate-from-claude-agent-sdk/readme) 的两套架构对照表最清晰 | [openai](https://openai.com/index/the-next-evolution-of-the-agents-sdk/) |
+| ACL 2026：CODESTRUCT | 论文 | ⚪ | 结构化动作空间（AST 操作 vs 文本编辑）：Pass@1 +1.2-5.0%、token -12-38%；AWS AI Labs，ACL 2026 录用，2026-07-02 | [aclanthology](https://aclanthology.org/2026.acl-long.607.pdf) |
+| arXiv：Sema Code | 论文 | ⚪ | 可嵌入 agent 引擎（npm 库形式）+ 八大机制（多租户隔离、FIFO 队列、自适应压缩、四层权限控制）；美的 AIRC，2026-04-13 | [arxiv](https://arxiv.org/pdf/2604.11045) |
+| arXiv：KAT-Coder-V2 | 技术报告 | ⚪ | Specialize-then-Unify 范式（五专家领域独立训练）：SWE-bench Verified 79.6%；快手 KwaiKAT Team，2026-03 | [arxiv](https://www.arxiv.org/pdf/2603.27703) |
 
 > 三篇短 bliki / 随笔（Vibe Coding、Interrogatory LLM、Genie Tarpit）若日后要收，建议合并成一个「概念定义 / 上下文工程 pattern」小专题，别各开条目稀释精品信号。

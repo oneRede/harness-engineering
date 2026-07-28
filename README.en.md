@@ -1,8 +1,8 @@
 [中文](README.md) | English
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
-![Articles](https://img.shields.io/badge/articles-61-green)
-![Translations](https://img.shields.io/badge/translations-31-orange)
+![Articles](https://img.shields.io/badge/articles-66-green)
+![Translations](https://img.shields.io/badge/translations-36-orange)
 
 # Harness Engineering Study Guide
 
@@ -112,7 +112,7 @@ harness-engineering/
 ├── thinking/              # Phase 2: Independent analysis (11 articles)
 ├── practice/              # Phase 3: Hands-on experiments (1 Ralph Demo)
 ├── feedback/              # Phase 4: Lessons learned (1 article)
-├── works/                 # Phase 5: Shareable outputs (31 translations + 1 original + 2 external Chinese captures)
+├── works/                 # Phase 5: Shareable outputs (36 translations + 1 original + 2 external Chinese captures)
 ├── tools/                 # Tools that reduce the 6 complexity dimensions
 ├── prompts/               # Validated prompts collection
 └── references/            # External resource index (61 articles with deep summaries)
@@ -126,7 +126,7 @@ Each subdirectory has its own `AGENTS.md` explaining its purpose and conventions
 - [x] **Phase 2: Form your own opinions** — 11 independent analyses (ongoing)
 - [x] **Phase 3: Pick a small project to practice** — Ralph Demo completed (321s, $0.31)
 - [x] **Phase 4: Record feedback & iterations** — 1 article (ongoing)
-- [x] **Phase 5: Produce shareable work** — 31 professional translations + 1 original synthesis + 2 external Chinese captures
+- [x] **Phase 5: Produce shareable work** — 36 professional translations + 1 original synthesis + 2 external Chinese captures
 
 ## 📚 Research Library
 
@@ -134,7 +134,7 @@ Each subdirectory has its own `AGENTS.md` explaining its purpose and conventions
 
 | Track | Coverage | Perspectives |
 |-------|----------|-------------|
-| AI-Era Harness Engineering | 57 articles | OpenAI → Fowler → Anthropic → LangChain → Stanford → Claude Code reverse engineering & source leak → Subagent runtime → Sensors/SPDD/ADLC → Out-of-scope, safety auditing & quality postmortems → Evaluation trilogy → Dynamic workflows → Origins (Ralph / Hashimoto) & discipline synthesis → Codex harness anatomy → Loop Engineering trilogy → Self-evolving harnesses & RSI → Formal verification → Multi-agent scaling (Cursor / C compiler) → Official containment & evals methodology → Behavior maps / DSLs / local models / outer-loop accountability → industrial-scale mechanical porting (Bun) & harness-model co-evolution (HarnessX) |
+| AI-Era Harness Engineering | 62 articles | OpenAI → Fowler → Anthropic → LangChain → Stanford → Claude Code reverse engineering & source leak → Subagent runtime → Sensors/SPDD/ADLC → Out-of-scope, safety auditing & quality postmortems → Evaluation trilogy → Dynamic workflows → Origins (Ralph / Hashimoto) & discipline synthesis → Codex harness anatomy → Loop Engineering trilogy → Self-evolving harnesses & RSI → Formal verification → Multi-agent scaling (Cursor / C compiler) → Official containment & evals methodology → Behavior maps / DSLs / local models / outer-loop accountability → industrial-scale mechanical porting (Bun) & harness-model co-evolution (HarnessX) → Context Engineering new rules + AI-native SDLC security + Large-scale code migration + Governability theory |
 | Cloud-Native Harness.io | 2 articles | CI/CD platform architecture (same name, different meaning) |
 | Efficiency Paradox & Capability Evolution | 2 articles | YDD systematic teardown + METR follow-up (measurement-methodology crisis) |
 | Extended Reading | 2 articles | Context Engineering, Human-Agent collaboration |
@@ -144,7 +144,7 @@ See [references/articles.md](references/articles.md) — each article includes c
 ## 📖 Translations
 
 <details>
-<summary><b>31 Chinese translations of key articles</b> (click to expand)</summary>
+<summary><b>36 Chinese translations of key articles</b> (click to expand)</summary>
 
 | Translation | Original Author | Source |
 |-------------|----------------|--------|

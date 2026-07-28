@@ -1,8 +1,8 @@
 中文 | [English](README.en.md)
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
-![Articles](https://img.shields.io/badge/articles-61-green)
-![Translations](https://img.shields.io/badge/translations-31-orange)
+![Articles](https://img.shields.io/badge/articles-66-green)
+![Translations](https://img.shields.io/badge/translations-36-orange)
 
 # Harness Engineering 学习指南
 
@@ -111,7 +111,7 @@ harness-engineering/
 ├── thinking/              # Phase 2：独立思考与质疑（11 篇）
 ├── practice/              # Phase 3：小项目实验（1 个 Ralph Demo）
 ├── feedback/              # Phase 4：踩坑与迭代心得（1 篇）
-├── works/                 # Phase 5：可展示的作品（31 篇翻译 + 1 篇原创 + 2 篇外部中文收录）
+├── works/                 # Phase 5：可展示的作品（36 篇翻译 + 1 篇原创 + 2 篇外部中文收录）
 ├── tools/                 # 工具具像化：降低 6 维复杂度的杠杆库
 ├── prompts/               # 验证有效的提示词积累
 └── references/            # 外部资源索引（61 篇文章深度摘要）
@@ -133,7 +133,7 @@ harness-engineering/
 
 | 脉络 | 覆盖 | 核心视角 |
 |------|------|---------|
-| AI 时代的 Harness Engineering | 57 篇 | OpenAI → Fowler → Anthropic → LangChain → Stanford → Claude Code 逆向与源码实锤 → Subagent runtime → 传感器/SPDD/ADLC → 越界·安全审计·质量复盘 → 评测三部曲 → 动态工作流 → 起源考据（Ralph / Hashimoto）与学科汇流 → Codex harness 解剖 → Loop Engineering 三部曲 → 自演化 harness 与 RSI → 形式化验证 → 多智能体并行规模化（Cursor / C compiler）→ 遏制与评测官方方法论 → 行为地图 / DSL / 本地模型 / 外环问责 → 工业级机械移植（Bun）与 harness-模型共演化（HarnessX） |
+| AI 时代的 Harness Engineering | 62 篇 | OpenAI → Fowler → Anthropic → LangChain → Stanford → Claude Code 逆向与源码实锤 → Subagent runtime → 传感器/SPDD/ADLC → 越界·安全审计·质量复盘 → 评测三部曲 → 动态工作流 → 起源考据（Ralph / Hashimoto）与学科汇流 → Codex harness 解剖 → Loop Engineering 三部曲 → 自演化 harness 与 RSI → 形式化验证 → 多智能体并行规模化（Cursor / C compiler）→ 遏制与评测官方方法论 → 行为地图 / DSL / 本地模型 / 外环问责 → 工业级机械移植（Bun）与 harness-模型共演化（HarnessX）→ Context Engineering 新规则 + AI 原生 SDLC 安全 + 大规模代码迁移 + 可治理性理论 |
 | 云原生 Harness.io | 2 篇 | CI/CD 平台架构（同名不同义的参照） |
 | 效率悖论与能力进化 | 2 篇 | YDD 系统性拆解 + METR 实验后续（测量方法论危机） |
 | 延伸阅读 | 2 篇 | Context Engineering、人机协作 |
@@ -143,7 +143,7 @@ harness-engineering/
 ## 📖 翻译作品
 
 <details>
-<summary><b>31 篇核心文章的中文翻译</b>（点击展开）</summary>
+<summary><b>36 篇核心文章的中文翻译</b>（点击展开）</summary>
 
 | 作品 | 原作者 | 来源 |
 |------|--------|------|
