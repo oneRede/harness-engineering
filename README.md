@@ -178,6 +178,11 @@ harness-engineering/
 | [过度积极的编码智能体 论文](works/arxiv-overeager-coding-agents-translation.md) | Yubin Qu 等 | arXiv |
 | [我是如何用 AI 写代码的](works/chris-ai-code-translation.md) | Chris Parsons | 个人博客 |
 | [我们如何构建 LangSmith Engine](works/langsmith-engine-translation.md) | Palash Shah | LangChain |
+| [Claude 5 代模型的上下文工程新规则](works/anthropic-context-engineering-new-rules-translation.md) | Thariq Shihipar | Anthropic |
+| [如何保障 AI 原生软件开发生命周期的安全](works/anthropic-ai-native-sdlc-security-translation.md) | Jason Clinton | Anthropic |
+| [如何使用 Claude Code 运行大规模代码迁移](works/anthropic-code-migration-translation.md) | Anthropic 团队 | Anthropic |
+| [廉价代码，昂贵判断：可治理智能体软件工程](works/arxiv-cheap-code-costly-judgment-translation.md) | James C. Davis 等 | arXiv |
+| [从 Context Window 到 Context Engineering](works/zhukov-context-engineering-translation.md) | Sergey Zhukov | Substack |
 
 </details>
 

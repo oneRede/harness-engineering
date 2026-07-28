@@ -179,6 +179,11 @@ See [references/articles.md](references/articles.md) — each article includes c
 | [Overeager Coding Agents (paper)](works/arxiv-overeager-coding-agents-translation.md) | Yubin Qu et al. | arXiv |
 | [How I Use AI to Code](works/chris-ai-code-translation.md) | Chris Parsons | Personal blog |
 | [How We Built LangSmith Engine](works/langsmith-engine-translation.md) | Palash Shah | LangChain |
+| [Context Engineering New Rules for Claude 5](works/anthropic-context-engineering-new-rules-translation.md) | Thariq Shihipar | Anthropic |
+| [How Anthropic Secures AI-Native SDLC](works/anthropic-ai-native-sdlc-security-translation.md) | Jason Clinton | Anthropic |
+| [Large-Scale Code Migrations with Claude Code](works/anthropic-code-migration-translation.md) | Anthropic Team | Anthropic |
+| [Cheap Code, Costly Judgment](works/arxiv-cheap-code-costly-judgment-translation.md) | James C. Davis et al. | arXiv |
+| [From Context Window to Context Engineering](works/zhukov-context-engineering-translation.md) | Sergey Zhukov | Substack |
 
 </details>
 
