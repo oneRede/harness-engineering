@@ -61,11 +61,11 @@
 > 它必须自包含，因为搜索器无法访问 `references/articles.md`。
 >
 > **维护纪律：** 当 `references/articles.md` 新增/删除条目时，**同一次提交中**必须同步更新本节。两份内容的口径（脉络划分、篇数、产品/项目清单）应保持完全一致。
-> 本节最近一次同步：2026-07-27（与 `articles.md` 当前内容对齐：66 篇文章 + 1 项已跟踪产品）。
+> 本节最近一次同步：2026-07-30（与 `articles.md` 当前内容对齐：69 篇文章 + 1 项已跟踪产品）。
 
-**核心文章 66 篇，分布于三条脉络：**
+**核心文章 69 篇，分布于三条脉络：**
 
-- **脉络一 — AI 时代 Harness Engineering（62 篇）：**
+- **脉络一 — AI 时代 Harness Engineering（65 篇）：**
   - OpenAI "Harness engineering"（原点，2026-02-11）/ "An open-source spec for Codex orchestration: Symphony"（2026-04-27，任务跟踪器作为控制平面）
   - Fowler/Böckeler "Harness engineering for coding agent users"（2026-04-02）+ 前传备忘录（2026-02-17）
   - LangChain "The Anatomy of an Agent Harness"（2026-03）/ "Continual Learning for AI Agents"（2026-04-05）/ "Agent Evaluation Readiness Checklist"
@@ -119,6 +119,9 @@
   - Addy Osmani "Own the Outer Loop"（2026-07-15，AIE 闭幕演讲：智能体跑内环、工程师拥有外环问责 + back-pressure 调速）
   - Jarred Sumner "Rewriting Bun in Rust"（2026-07-08，50 dynamic workflows × 峰值 64 Claude × 11 天机械移植 53.5 万行 Zig→Rust；语言无关测试套件作 oracle + 1 实现者/2 对抗评审者/1 修复者 + "修流程不修代码"；$165k API 成本账本）
   - HarnessX 论文（arXiv 2606.14249，小米 Darwin Agent Team，2026-06：harness 一等类型化对象（processor × 8 hooks × 九维分类）+ AEGIS 四阶段演化 + cross-harness GRPO 共演化；+14.5% 均值（最高 +44.0%）、共演化再 +4.7%、弱模型受益最大）
+  - Living-Harness 论文（arXiv 2607.26598，Yuetian Du 等，2026-07-29：Evolution-SOP 指导的 Rollout-Evaluate-Update 循环，将失败转化为持久程序性修复；片段记忆 + 状态图；τ²-Bench / MultiWOZ-2.4 Pass@1 +10.07/+9.91pp；支持跨模型迁移）
+  - LangChain "3 Years of Graph Engineering with LangGraph"（2026 估计，官方博客：图工程 = 循环工程 = 约束工程，3 年实践经验总结，提供确定性 vs 智能体特性的设计权衡框架）
+  - OpenAI "Scientific computing in the age of agentic AI"（2026-07-29，实地报告：AI 智能体将科学计算瓶颈从实现转到验证，人类成为约束设计者；8 个项目案例，强调可衡量验收目标）
 - **脉络二 — 云原生 Harness.io（2 篇）：** Harness.io 官方全局架构 / Google Cloud 集成场景
 - **脉络三 — 效率悖论（2 篇）：** YDD/Miss-you "效率悖论的系统性拆解"（2026-03-03）/ METR 实验后续 + 自报调查（2026-02-24 + 2026-05-11，"慢 19%"的官方后续：弱证据转向加速 + RCT 方法论危机）
 

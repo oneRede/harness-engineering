@@ -1,8 +1,8 @@
 中文 | [English](README.en.md)
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
-![Articles](https://img.shields.io/badge/articles-66-green)
-![Translations](https://img.shields.io/badge/translations-36-orange)
+![Articles](https://img.shields.io/badge/articles-69-green)
+![Translations](https://img.shields.io/badge/translations-39-orange)
 
 # Harness Engineering 学习指南
 
@@ -111,7 +111,7 @@ harness-engineering/
 ├── thinking/              # Phase 2：独立思考与质疑（11 篇）
 ├── practice/              # Phase 3：小项目实验（1 个 Ralph Demo）
 ├── feedback/              # Phase 4：踩坑与迭代心得（1 篇）
-├── works/                 # Phase 5：可展示的作品（36 篇翻译 + 1 篇原创 + 2 篇外部中文收录）
+├── works/                 # Phase 5：可展示的作品（39 篇翻译 + 1 篇原创 + 2 篇外部中文收录）
 ├── tools/                 # 工具具像化：降低 6 维复杂度的杠杆库
 ├── prompts/               # 验证有效的提示词积累
 └── references/            # 外部资源索引（61 篇文章深度摘要）
@@ -125,15 +125,15 @@ harness-engineering/
 - [x] **Phase 2：形成自己的观点** — 11 篇独立思考（持续中）
 - [x] **Phase 3：选一个小项目实践** — Ralph Demo 完成（321 秒，$0.31）
 - [x] **Phase 4：记录反馈迭代** — 1 篇（持续中）
-- [x] **Phase 5：输出可展示的作品** — 31 篇专业翻译 + 1 篇原创综合分析 + 2 篇外部中文收录
+- [x] **Phase 5：输出可展示的作品** — 39 篇专业翻译 + 1 篇原创综合分析 + 2 篇外部中文收录
 
 ## 📚 研究资料库
 
-跨三条知识脉络 61 篇文章 + 2 篇延伸阅读：
+跨三条知识脉络 69 篇文章 + 2 篇延伸阅读：
 
 | 脉络 | 覆盖 | 核心视角 |
 |------|------|---------|
-| AI 时代的 Harness Engineering | 62 篇 | OpenAI → Fowler → Anthropic → LangChain → Stanford → Claude Code 逆向与源码实锤 → Subagent runtime → 传感器/SPDD/ADLC → 越界·安全审计·质量复盘 → 评测三部曲 → 动态工作流 → 起源考据（Ralph / Hashimoto）与学科汇流 → Codex harness 解剖 → Loop Engineering 三部曲 → 自演化 harness 与 RSI → 形式化验证 → 多智能体并行规模化（Cursor / C compiler）→ 遏制与评测官方方法论 → 行为地图 / DSL / 本地模型 / 外环问责 → 工业级机械移植（Bun）与 harness-模型共演化（HarnessX）→ Context Engineering 新规则 + AI 原生 SDLC 安全 + 大规模代码迁移 + 可治理性理论 |
+| AI 时代的 Harness Engineering | 65 篇 | OpenAI → Fowler → Anthropic → LangChain → Stanford → Claude Code 逆向与源码实锤 → Subagent runtime → 传感器/SPDD/ADLC → 越界·安全审计·质量复盘 → 评测三部曲 → 动态工作流 → 起源考据（Ralph / Hashimoto）与学科汇流 → Codex harness 解剖 → Loop Engineering 三部曲 → 自演化 harness 与 RSI → 形式化验证 → 多智能体并行规模化（Cursor / C compiler）→ 遏制与评测官方方法论 → 行为地图 / DSL / 本地模型 / 外环问责 → 工业级机械移植（Bun）与 harness-模型共演化（HarnessX）→ Context Engineering 新规则 + AI 原生 SDLC 安全 + 大规模代码迁移 + 可治理性理论 + 从 Context Window 到 Context Engineering + Living-Harness 自进化框架 + LangGraph 图工程实践 + OpenAI 科学计算实地报告 |
 | 云原生 Harness.io | 2 篇 | CI/CD 平台架构（同名不同义的参照） |
 | 效率悖论与能力进化 | 2 篇 | YDD 系统性拆解 + METR 实验后续（测量方法论危机） |
 | 延伸阅读 | 2 篇 | Context Engineering、人机协作 |
@@ -143,7 +143,7 @@ harness-engineering/
 ## 📖 翻译作品
 
 <details>
-<summary><b>36 篇核心文章的中文翻译</b>（点击展开）</summary>
+<summary><b>39 篇核心文章的中文翻译</b>（点击展开）</summary>
 
 | 作品 | 原作者 | 来源 |
 |------|--------|------|
@@ -183,6 +183,9 @@ harness-engineering/
 | [如何使用 Claude Code 运行大规模代码迁移](works/anthropic-code-migration-translation.md) | Anthropic 团队 | Anthropic |
 | [廉价代码，昂贵判断：可治理智能体软件工程](works/arxiv-cheap-code-costly-judgment-translation.md) | James C. Davis 等 | arXiv |
 | [从 Context Window 到 Context Engineering](works/zhukov-context-engineering-translation.md) | Sergey Zhukov | Substack |
+| [Living-Harness：交互智能体进化器](works/arxiv-2607-26598-living-harness-translation.md) | Yuetian Du et al. | arXiv |
+| [LangGraph 三年图工程实践](works/langchain-langgraph-3-years-translation.md) | LangChain Team | LangChain Blog |
+| [智能体 AI 时代的科学计算](works/openai-scientific-computing-agentic-ai-translation.md) | OpenAI | OpenAI |
 
 </details>
 

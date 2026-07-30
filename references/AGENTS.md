@@ -9,10 +9,10 @@
 
 ## 文章
 
-详见 [articles.md](articles.md) — 完整的文章索引，含三条脉络 **66 篇文章 + 1 项已跟踪产品** 的深度摘要。
+详见 [articles.md](articles.md) — 完整的文章索引，含三条脉络 **69 篇文章 + 1 项已跟踪产品** 的深度摘要。
 权威计数与编号规则以 `articles.md` 头部为准；本表是它的概览缓存。
 
-### 脉络一：AI 时代的 Harness Engineering（62 篇）
+### 脉络一：AI 时代的 Harness Engineering（65 篇）
 
 | # | 文章 | 作者 | 核心贡献 |
 |---|------|------|---------|
@@ -73,6 +73,14 @@
 | 55 | [Own the Outer Loop](https://addyosmani.com/blog/own-the-outer-loop/) | Addy Osmani | 智能体跑内环、工程师拥有外环问责；back-pressure 调节循环速率与作用域来授予自主权 |
 | 56 | [Rewriting Bun in Rust](https://bun.sh/blog/bun-in-rust) | Jarred Sumner | "修流程不修代码"工业级实录：50 dynamic workflows × 64 Claude × 11 天移植 53.5 万行 Zig；语言无关测试套件作 oracle + 对抗评审默认化 |
 | 57 | [HarnessX 论文](https://arxiv.org/abs/2606.14249) | Darwin Agent Team（小米） | harness 一等类型化对象 + AEGIS 轨迹演化 + cross-harness GRPO 共演化：+14.5%（共演化再 +4.7%），弱模型受益最大 |
+| 62 | [Claude 5 代模型的上下文工程新规则](https://www.anthropic.com/engineering/context-engineering-for-agents) | Anthropic | 从上下文窗口转向上下文工程：渐进式披露、工具上下文治理、记忆/压缩/缓存协同 |
+| 63 | [AI 原生 SDLC 安全](https://www.anthropic.com/engineering/securing-ai-native-sdlc) | Anthropic | AI 原生软件生命周期的安全边界：权限、审计、隔离、供应链与人类审批门 |
+| 64 | [Claude Code 大规模代码迁移](https://www.anthropic.com/engineering/claude-code-large-scale-migrations) | Anthropic | 大规模迁移的 harness 化实践：任务分解、验证循环、并行执行、回归门控 |
+| 65 | [Cheap Code, Costly Judgment](https://arxiv.org/abs/2607.01087v2) | James C. Davis 等 | 代码生成趋于低成本后，工程瓶颈转向架构判断、治理与责任分配 |
+| 66 | [AI 智能体的上下文工程](https://zhukov.co/posts/context-engineering/) | Vladislav Zhukov | 上下文是构建出来的系统：示例、工具、记忆、检索、压缩、缓存与反馈共同组成 agent context |
+| 67 | [Living-Harness 论文](https://arxiv.org/abs/2607.26598) | Yuetian Du et al. | 自进化智能体框架：Evolution-SOP 指导的 Rollout-Evaluate-Update 循环，将评估后的失败转化为持久程序性修复（片段记忆 + 状态图），Pass@1 +10.07/+9.91pp，支持跨模型迁移 |
+| 68 | [LangGraph 三年图工程实践](https://www.langchain.com/blog/3-years-of-graph-engineering-with-langgraph) | LangChain Team | 图工程 = 循环工程 = 约束工程：在每个步骤将模型推理放在正确位置，配以正确上下文；提供确定性 vs 智能体特性的设计权衡框架 |
+| 69 | [OpenAI 科学计算实地报告](https://openai.com/index/scientific-computing-agentic-ai/) | OpenAI | AI 智能体将科学计算瓶颈从"实现能力"转到"验证能力"，人类从执行者变为约束设计者；强调可衡量验收目标与反馈驱动迭代 |
 
 ### 脉络二：云原生 Harness.io（2 篇）
 

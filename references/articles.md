@@ -10,7 +10,7 @@
 > **下游引用都是本文的冗余缓存：** 根 `README.md` / `README.en.md` 的 badge、`prompts/deep-research-tracker.md` 的去重清单、`references/AGENTS.md` 的概览表。
 > 新增/删除文章时，必须**同一次提交**更新本文 + 所有下游缓存。
 >
-> 当前规模：**66 篇文章**（脉络一 62 + 脉络二 2 + 脉络三 2）+ **1 项已跟踪产品**（不计入文章数）。最近一次同步：2026-07-27。
+> 当前规模：**69 篇文章**（脉络一 65 + 脉络二 2 + 脉络三 2）+ **1 项已跟踪产品**（不计入文章数）。最近一次同步：2026-07-30。
 
 ## 脉络一：AI 时代的 Harness Engineering（大模型护栏与认知工程）
 
@@ -1807,6 +1807,92 @@
 
 ---
 
+<a id="article-69"></a>
+
+### 69. OpenAI — 智能体 AI 时代的科学计算
+
+- **标题：** Scientific computing in the age of agentic AI
+- **链接：** [openai.com](https://openai.com/index/scientific-computing-agentic-ai/)
+- **翻译：** [works/openai-scientific-computing-agentic-ai-translation.md](../works/openai-scientific-computing-agentic-ai-translation.md)
+- **作者：** OpenAI | **日期：** 2026-07-29
+- **核心：** OpenAI 官方实地报告，基于 8 个真实项目（重点详述基因组学工具 cyvcf2 优化案例）研究 AI 编程智能体（Codex、Claude Code）在科学计算中的应用。核心洞察：AI 智能体将科学软件开发的瓶颈从"实现能力"转移到"验证能力"，人类角色从执行者变为约束设计者与质量守门人——研究者现在的职责是定义构建目标（specify what to build）、定义正确性标准（define how to measure correctness）、决定何时发布（decide when to ship）。关键实践：有效项目具备外部参考或可衡量验收目标（精确输出一致性、统计行为对齐、模拟数据预设答案），采用反馈驱动迭代而非一次性生成。警示：最后一英里往往需要最多工作（边缘情况、数值精度），长期维护需要明确责任人和可信计划，否则"今天的现代化重写会成为明天的废弃代码"。
+
+- **关键洞察：**
+  - **角色转变**：从"实现者"到"验证者和编排者"
+  - **验证瓶颈**：降低实现成本后，验证能力成为新瓶颈
+  - **约束设计**：可衡量验收目标（measurable acceptance target）是成功关键
+  - **反馈回路**：反馈驱动迭代优于一次性生成
+
+- **与其他文章的关联：**
+
+| 本文概念 | 对应文章 |
+|---------|---------|
+| 验证与编排角色 | #55 Addy Osmani "Own the Outer Loop" |
+| 约束设计 | #2 Fowler 控制论框架、#3 LangChain Harness |
+| 反馈驱动迭代 | #41 Loop Engineering、#68 LangGraph |
+| 可衡量验收标准 | #34 Harness-Bench、#35 How good is your harness |
+| 科学计算领域 | 仓库首篇科学计算应用案例 |
+
+---
+
+<a id="article-68"></a>
+
+### 68. LangChain — LangGraph 三年图工程实践
+
+- **标题：** 3 Years of Graph Engineering with LangGraph
+- **链接：** [langchain.com](https://www.langchain.com/blog/3-years-of-graph-engineering-with-langgraph)
+- **翻译：** [works/langchain-langgraph-3-years-translation.md](../works/langchain-langgraph-3-years-translation.md)
+- **作者：** LangChain Team | **日期：** 2026（估计）
+- **核心：** LangChain 团队用 3 年 LangGraph 实践经验，系统性阐明图工程（Graph Engineering）与循环工程（Loop Engineering）、约束工程（Harness Engineering）的概念关系。核心理念：在每个步骤将模型推理放在正确位置，配以正确上下文。明确"图工程不是新想法，是成熟方法的最新名称"，循环是简单的图，图工程是约束工程的具体实现形式。通过三个案例（知识库助手、深度研究、文档 agent）展示确定性路径与智能体行为的设计权衡：有预测结构→用图约束，完全开放→用纯 agent harness。关键反思：GPT Researcher 和 LangChain 自家 deep research 都从预定义图迁移回纯 agent 循环，说明过度工程化的风险。
+
+- **关键洞察：**
+  - **概念整合**：graph/loop/harness engineering 是同一理念的不同名称
+  - **设计权衡框架**：何时强制确定性路径（支持、分类、合规）vs 何时放手给 agent 推理（深度研究、开放任务）
+  - **实践反思**：包含失败案例（从图迁移回 agent），比纯粹成功宣传更有价值
+  - **工程哲学**：平衡确定性与智能体特性，而非二选一
+
+- **与其他文章的关联：**
+
+| 本文概念 | 对应文章 |
+|---------|---------|
+| Graph Engineering 定义 | #1 OpenAI、#2 Fowler 约束工程框架 |
+| Loop Engineering | Addy Osmani 循环工程系列 |
+| Harness Engineering | #3 LangChain "Harness 解剖学" |
+| 确定性 vs 智能体权衡 | #55 Addy Osmani "Own the Outer Loop" |
+| 认知架构设计 | #44 Meta-Harness、#36 Dynamic Workflows |
+
+---
+
+<a id="article-67"></a>
+
+### 67. Yuetian Du et al. — Living-Harness：自进化的交互智能体框架
+
+- **标题：** Living-Harness Is an Interactive-Agent Evolver
+- **链接：** [arxiv.org](https://arxiv.org/abs/2607.26598)
+- **翻译：** [works/arxiv-2607-26598-living-harness-translation.md](../works/arxiv-2607-26598-living-harness-translation.md)
+- **作者：** Yuetian Du, Yucheng Wang, He Xu, Jiexu Xu, Shanwen Tan, Bing Zhao, Boyu Yang, Zhijie Xu, Ming Kong, Hu Wei, Jie Liu, Qiang Zhu | **日期：** 2026-07-29
+- **核心：** 提出 Living-Harness，一个自进化的智能体框架，通过 Evolution-SOP（进化标准操作程序）指导的 Rollout-Evaluate-Update 循环，将每个完成的交互轨迹及其评估信号转换为持久的程序性修复。区分静态框架（部署后固定）与自进化框架（跨回合累积改进），引入两种互补的知识表示：片段记忆（记录触发条件、失败模式、恢复动作）和状态图（记录状态节点、修复边、转换规则）。在 τ²-Bench 和 MultiWOZ-2.4 的 8 个交互环境中，Pass@1 相比最强基线分别提升 10.07 和 9.91 个百分点，并支持仅检索方式跨模型复用进化后的框架状态。提供 Program-State POMDP 形式化、commit gates 机制和完整 Prompt 规格。
+
+- **关键贡献：**
+  - **持久程序性修复理论**：区分任务局部修正与跨回合持久进化
+  - **双重知识表示**：片段记忆（经验性知识）+ 状态图（工作流知识）
+  - **Evolution-SOP 指导的有界更新**：工具和基础上下文保持冻结，仅进化框架状态
+  - **跨模型迁移能力**：仅检索方式复用进化框架状态，无需重新训练
+
+- **与其他文章的关联：**
+
+| 本文概念 | 对应文章 |
+|---------|---------|
+| 静态 vs 自进化框架 | #1 OpenAI "熵管理与垃圾回收" |
+| Agent Harness 定义 | #2 Fowler 控制论框架、#3 LangChain "Harness = Model 外的一切" |
+| Persistent Procedural Repair | #41 Loop Engineering "持久反馈循环" |
+| Evolution-SOP | #20 Fowler SPDD "程序化标准操作程序" |
+| Program-State POMDP | #44 Meta-Harness "智能体不确定性建模" |
+| Cross-Episode Learning | #22 LangChain Continual Learning、#27 ExpeL |
+| Commit Gates | #2 Fowler "门控与背压"、#3 LangChain "拒绝坏结果" |
+
+---
+
 ## 两条脉络的关系
 
 ```
@@ -1829,7 +1915,7 @@ Harness Engineering（AI 护栏）     Harness.io（交付管线）
 ## 中文转译 / 二手资料（不计入文章数）
 
 > 这里收录的是**他人已发布的中文译介或二手综述**——本仓库做了归档但**不视为一手文献**。
-> 本段不参与 `### N. ...` 的全局编号，不计入 66 篇文章总数；与上方编号正文严格区分，避免污染脉络计数。
+> 本段不参与 `### N. ...` 的全局编号，不计入 69 篇文章总数；与上方编号正文严格区分，避免污染脉络计数。
 > 收录标准：内容与 Harness Engineering 直接相关、来源可追溯到具名作者 / 译者、且对本仓库已有一手文献有补充或对照价值。
 
 ### Akshay Pachaar — The Anatomy of an Agent Harness（中译版）
@@ -1882,7 +1968,7 @@ Harness Engineering（AI 护栏）     Harness.io（交付管线）
 
 ## 已跟踪产品 / 项目（不计入文章数）
 
-> 这里收录的是**开源产品 / 框架 / 工具**，不是文章。本段不参与"### N. ..." 的全局编号，不计入 66 篇的文章总数。
+> 这里收录的是**开源产品 / 框架 / 工具**，不是文章。本段不参与"### N. ..." 的全局编号，不计入 69 篇的文章总数。
 > 触发"产品级实现案例"的判定通常是：有可运行代码、有版本号、被本仓库 thinking/ 或 works/ 单独分析。
 
 ### ⭐ Chachamaru127 — claude-code-harness v4.2 "Hokage"（产品级实现案例）
@@ -1910,7 +1996,7 @@ Harness Engineering（AI 护栏）     Harness.io（交付管线）
 
 ## 观察项 / 候选材料（不计入文章数）
 
-> 2026-05 起各轮调研中已甄别、但**暂不值得做成正式文章**的产品页 / README / 短 bliki / 发布稿 / 工程随笔。本段不参与 `### N.` 编号，不计入 66 篇文章总数。
+> 2026-05 起各轮调研中已甄别、但**暂不值得做成正式文章**的产品页 / README / 短 bliki / 发布稿 / 工程随笔。本段不参与 `### N.` 编号，不计入 69 篇文章总数。
 > 中文译文留在本地 `translate/`（gitignored）作阅读辅助；下表只记上游链接与定性，方便下次快速复看。
 > **去向标记：** 🔵 待实测后入 `tools/`（遵守 tools/「只收用过的工具」标准，未实测前不正式收录） ｜ ⚪ 长期观察 ｜ ⏭️ 暂存不收。
 
