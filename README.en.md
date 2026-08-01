@@ -1,8 +1,8 @@
 [中文](README.md) | English
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
-![Articles](https://img.shields.io/badge/articles-69-green)
-![Translations](https://img.shields.io/badge/translations-39-orange)
+![Articles](https://img.shields.io/badge/articles-70-green)
+![Translations](https://img.shields.io/badge/translations-40-orange)
 
 # Harness Engineering Study Guide
 
@@ -112,7 +112,7 @@ harness-engineering/
 ├── thinking/              # Phase 2: Independent analysis (11 articles)
 ├── practice/              # Phase 3: Hands-on experiments (1 Ralph Demo)
 ├── feedback/              # Phase 4: Lessons learned (1 article)
-├── works/                 # Phase 5: Shareable outputs (39 translations + 1 original + 2 external Chinese captures)
+├── works/                 # Phase 5: Shareable outputs (40 translations + 1 original + 2 external Chinese captures)
 ├── tools/                 # Tools that reduce the 6 complexity dimensions
 ├── prompts/               # Validated prompts collection
 └── references/            # External resource index (61 articles with deep summaries)
@@ -126,15 +126,15 @@ Each subdirectory has its own `AGENTS.md` explaining its purpose and conventions
 - [x] **Phase 2: Form your own opinions** — 11 independent analyses (ongoing)
 - [x] **Phase 3: Pick a small project to practice** — Ralph Demo completed (321s, $0.31)
 - [x] **Phase 4: Record feedback & iterations** — 1 article (ongoing)
-- [x] **Phase 5: Produce shareable work** — 39 professional translations + 1 original synthesis + 2 external Chinese captures
+- [x] **Phase 5: Produce shareable work** — 40 professional translations + 1 original synthesis + 2 external Chinese captures
 
 ## 📚 Research Library
 
-69 articles across three knowledge tracks + 2 extended readings:
+70 articles across three knowledge tracks + 2 extended readings:
 
 | Track | Coverage | Perspectives |
 |-------|----------|-------------|
-| AI-Era Harness Engineering | 65 articles | OpenAI → Fowler → Anthropic → LangChain → Stanford → Claude Code reverse engineering & source leak → Subagent runtime → Sensors/SPDD/ADLC → Out-of-scope, safety auditing & quality postmortems → Evaluation trilogy → Dynamic workflows → Origins (Ralph / Hashimoto) & discipline synthesis → Codex harness anatomy → Loop Engineering trilogy → Self-evolving harnesses & RSI → Formal verification → Multi-agent scaling (Cursor / C compiler) → Official containment & evals methodology → Behavior maps / DSLs / local models / outer-loop accountability → industrial-scale mechanical porting (Bun) & harness-model co-evolution (HarnessX) → Context Engineering new rules + AI-native SDLC security + Large-scale code migration + Governability theory + From Context Window to Context Engineering + Living-Harness self-evolving harness + LangGraph 3-year graph engineering practice + OpenAI scientific computing field report |
+| AI-Era Harness Engineering | 66 articles | OpenAI → Fowler → Anthropic → LangChain → Stanford → Claude Code reverse engineering & source leak → Subagent runtime → Sensors/SPDD/ADLC → Out-of-scope, safety auditing & quality postmortems → Evaluation trilogy → Dynamic workflows → Origins (Ralph / Hashimoto) & discipline synthesis → Codex harness anatomy → Loop Engineering trilogy → Self-evolving harnesses & RSI → Formal verification → Multi-agent scaling (Cursor / C compiler) → Official containment & evals methodology → Behavior maps / DSLs / local models / outer-loop accountability → industrial-scale mechanical porting (Bun) & harness-model co-evolution (HarnessX) → Context Engineering new rules + AI-native SDLC security + Large-scale code migration + Governability theory + From Context Window to Context Engineering + Living-Harness self-evolving harness + LangGraph 3-year graph engineering practice + OpenAI scientific computing field report + The Orchestrator's Tax |
 | Cloud-Native Harness.io | 2 articles | CI/CD platform architecture (same name, different meaning) |
 | Efficiency Paradox & Capability Evolution | 2 articles | YDD systematic teardown + METR follow-up (measurement-methodology crisis) |
 | Extended Reading | 2 articles | Context Engineering, Human-Agent collaboration |
@@ -144,7 +144,7 @@ See [references/articles.md](references/articles.md) — each article includes c
 ## 📖 Translations
 
 <details>
-<summary><b>39 Chinese translations of key articles</b> (click to expand)</summary>
+<summary><b>40 Chinese translations of key articles</b> (click to expand)</summary>
 
 | Translation | Original Author | Source |
 |-------------|----------------|--------|
@@ -187,6 +187,7 @@ See [references/articles.md](references/articles.md) — each article includes c
 | [Living-Harness: Interactive-Agent Evolver](works/arxiv-2607-26598-living-harness-translation.md) | Yuetian Du et al. | arXiv |
 | [3 Years of Graph Engineering with LangGraph](works/langchain-langgraph-3-years-translation.md) | LangChain Team | LangChain Blog |
 | [Scientific Computing in the Age of Agentic AI](works/openai-scientific-computing-agentic-ai-translation.md) | OpenAI | OpenAI |
+| [The Orchestrator's Tax](works/orchestrator-tax-translation.md) | Rahul Garg | Martin Fowler |
 
 </details>
 

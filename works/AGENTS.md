@@ -69,6 +69,7 @@ sourceFigureCount: # 原文插图数（数字；null = 原文不可得、未审�
 | [arxiv-2607-26598-living-harness-translation.md](arxiv-2607-26598-living-harness-translation.md) | Living-Harness Is an Interactive-Agent Evolver | Yuetian Du et al. / arXiv |
 | [langchain-langgraph-3-years-translation.md](langchain-langgraph-3-years-translation.md) | 3 Years of Graph Engineering with LangGraph | LangChain Team / LangChain Blog |
 | [openai-scientific-computing-agentic-ai-translation.md](openai-scientific-computing-agentic-ai-translation.md) | Scientific computing in the age of agentic AI | OpenAI |
+| [orchestrator-tax-translation.md](orchestrator-tax-translation.md) | The Orchestrator's Tax | Rahul Garg / Martin Fowler |
 
 ### 中文转译 / 二手资料
 
