@@ -63,9 +63,9 @@
 > **维护纪律：** 当 `references/articles.md` 新增/删除条目时，**同一次提交中**必须同步更新本节。两份内容的口径（脉络划分、篇数、产品/项目清单）应保持完全一致。
 > 本节最近一次同步：2026-07-30（与 `articles.md` 当前内容对齐：69 篇文章 + 1 项已跟踪产品）。
 
-**核心文章 70 篇，分布于三条脉络：**
+**核心文章 71 篇，分布于三条脉络：**
 
-- **脉络一 — AI 时代 Harness Engineering（66 篇）：**
+- **脉络一 — AI 时代 Harness Engineering（67 篇）：**
   - OpenAI "Harness engineering"（原点，2026-02-11）/ "An open-source spec for Codex orchestration: Symphony"（2026-04-27，任务跟踪器作为控制平面）
   - Fowler/Böckeler "Harness engineering for coding agent users"（2026-04-02）+ 前传备忘录（2026-02-17）
   - LangChain "The Anatomy of an Agent Harness"（2026-03）/ "Continual Learning for AI Agents"（2026-04-05）/ "Agent Evaluation Readiness Checklist"
