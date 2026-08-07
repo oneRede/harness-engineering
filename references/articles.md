@@ -1186,6 +1186,7 @@
 
 - **标题：** Loop engineering: Getting started with loops
 - **链接：** [claude.com/blog](https://claude.com/blog/getting-started-with-loops)
+- **翻译：** [works/claude-getting-started-loops-translation.md](../works/claude-getting-started-loops-translation.md)
 - **作者：** Delba de Oliveira, Michael Segner（Claude Code 团队） | **日期：** 2026-06-30
 - **核心：** 官方把社区吵成一团的"loop"收敛为一个产品级定义——**智能体重复工作周期直到满足停止条件**——并按"触发方式 × 停止方式 × 所用原语 × 适用任务"给出四分类。loop engineering 词汇从 Twitter 话语固化为 shipping feature 的标志文。
 - **四类循环：**
@@ -2132,6 +2133,5 @@ Harness Engineering（AI 护栏）     Harness.io（交付管线）
 | ACL 2026：CODESTRUCT | 论文 | ⚪ | 结构化动作空间（AST 操作 vs 文本编辑）：Pass@1 +1.2-5.0%、token -12-38%；AWS AI Labs，ACL 2026 录用，2026-07-02 | [aclanthology](https://aclanthology.org/2026.acl-long.607.pdf) |
 | arXiv：Sema Code | 论文 | ⚪ | 可嵌入 agent 引擎（npm 库形式）+ 八大机制（多租户隔离、FIFO 队列、自适应压缩、四层权限控制）；美的 AIRC，2026-04-13 | [arxiv](https://arxiv.org/pdf/2604.11045) |
 | arXiv：KAT-Coder-V2 | 技术报告 | ⚪ | Specialize-then-Unify 范式（五专家领域独立训练）：SWE-bench Verified 79.6%；快手 KwaiKAT Team，2026-03 | [arxiv](https://www.arxiv.org/pdf/2603.27703) |
-| Claude：Getting Started with Loops | 产品文档 | ⚪ | Loop Engineering 入门指南：四种循环类型（Turn-Based / Goal-Based / Time-Based / Proactive）+ 触发/停止条件 + token 管理策略；官方实践指南，论点已被 #41（Loop Engineering）/ #42（The Coming Loop）覆盖，可作为 /goal、/loop、/schedule 命令的官方使用手册，2026-08-07（收录日期） | [claude.com](https://claude.com/blog/getting-started-with-loops) |
 
 > 三篇短 bliki / 随笔（Vibe Coding、Interrogatory LLM、Genie Tarpit）若日后要收，建议合并成一个「概念定义 / 上下文工程 pattern」小专题，别各开条目稀释精品信号。

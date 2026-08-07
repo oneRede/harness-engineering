@@ -2,7 +2,7 @@
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 ![Articles](https://img.shields.io/badge/articles-71-green)
-![Translations](https://img.shields.io/badge/translations-41-orange)
+![Translations](https://img.shields.io/badge/translations-42-orange)
 
 # Harness Engineering Study Guide
 
@@ -112,7 +112,7 @@ harness-engineering/
 ├── thinking/              # Phase 2: Independent analysis (11 articles)
 ├── practice/              # Phase 3: Hands-on experiments (1 Ralph Demo)
 ├── feedback/              # Phase 4: Lessons learned (1 article)
-├── works/                 # Phase 5: Shareable outputs (41 translations + 1 original + 2 external Chinese captures)
+├── works/                 # Phase 5: Shareable outputs (42 translations + 1 original + 2 external Chinese captures)
 ├── tools/                 # Tools that reduce the 6 complexity dimensions
 ├── prompts/               # Validated prompts collection
 └── references/            # External resource index (61 articles with deep summaries)
@@ -126,7 +126,7 @@ Each subdirectory has its own `AGENTS.md` explaining its purpose and conventions
 - [x] **Phase 2: Form your own opinions** — 11 independent analyses (ongoing)
 - [x] **Phase 3: Pick a small project to practice** — Ralph Demo completed (321s, $0.31)
 - [x] **Phase 4: Record feedback & iterations** — 1 article (ongoing)
-- [x] **Phase 5: Produce shareable work** — 41 professional translations + 1 original synthesis + 2 external Chinese captures
+- [x] **Phase 5: Produce shareable work** — 42 professional translations + 1 original synthesis + 2 external Chinese captures
 
 ## 📚 Research Library
 
@@ -144,7 +144,7 @@ See [references/articles.md](references/articles.md) — each article includes c
 ## 📖 Translations
 
 <details>
-<summary><b>41 Chinese translations of key articles</b> (click to expand)</summary>
+<summary><b>42 Chinese translations of key articles</b> (click to expand)</summary>
 
 | Translation | Original Author | Source |
 |-------------|----------------|--------|
@@ -189,6 +189,7 @@ See [references/articles.md](references/articles.md) — each article includes c
 | [Scientific Computing in the Age of Agentic AI](works/openai-scientific-computing-agentic-ai-translation.md) | OpenAI | OpenAI |
 | [The Orchestrator's Tax](works/orchestrator-tax-translation.md) | Rahul Garg | Martin Fowler |
 | [Agent Harness Design: Why an ARC-AGI-3 Score Tripled](works/agent-harness-arc-agi-translation.md) | Umesh Malik | Personal Blog |
+| [Loop Engineering: Getting Started with Loops](works/claude-getting-started-loops-translation.md) | Delba de Oliveira, Michael Segner | Claude.com |
 
 </details>
 
