@@ -7,6 +7,7 @@ sourceKind: "x/status"
 sourceLanguage: "zh-CN"
 sourceCapturedAt: "2026-06-23"
 sourceCaptureMethod: "user-provided markdown"
+sourceFigureCount: 0
 ---
 
 # Harness 系列文章之 7：关于 subagent

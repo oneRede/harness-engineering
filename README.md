@@ -2,7 +2,7 @@
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 ![Articles](https://img.shields.io/badge/articles-71-green)
-![Translations](https://img.shields.io/badge/translations-44-orange)
+![Translations](https://img.shields.io/badge/translations-45-orange)
 
 # Harness Engineering 学习指南
 
@@ -111,7 +111,7 @@ harness-engineering/
 ├── thinking/              # Phase 2：独立思考与质疑（11 篇）
 ├── practice/              # Phase 3：小项目实验（1 个 Ralph Demo）
 ├── feedback/              # Phase 4：踩坑与迭代心得（1 篇）
-├── works/                 # Phase 5：可展示的作品（44 篇翻译 + 1 篇原创 + 2 篇外部中文收录）
+├── works/                 # Phase 5：可展示的作品（45 篇翻译 + 1 篇原创 + 2 篇外部中文收录）
 ├── tools/                 # 工具具像化：降低 6 维复杂度的杠杆库
 ├── prompts/               # 验证有效的提示词积累
 └── references/            # 外部资源索引（61 篇文章深度摘要）
@@ -125,7 +125,7 @@ harness-engineering/
 - [x] **Phase 2：形成自己的观点** — 11 篇独立思考（持续中）
 - [x] **Phase 3：选一个小项目实践** — Ralph Demo 完成（321 秒，$0.31）
 - [x] **Phase 4：记录反馈迭代** — 1 篇（持续中）
-- [x] **Phase 5：输出可展示的作品** — 44 篇专业翻译 + 1 篇原创综合分析 + 2 篇外部中文收录
+- [x] **Phase 5：输出可展示的作品** — 45 篇专业翻译 + 1 篇原创综合分析 + 2 篇外部中文收录
 
 ## 📚 研究资料库
 
@@ -143,10 +143,11 @@ harness-engineering/
 ## 📖 翻译作品
 
 <details>
-<summary><b>44 篇核心文章的中文翻译</b>（点击展开）</summary>
+<summary><b>45 篇核心文章的中文翻译</b>（点击展开）</summary>
 
 | 作品 | 原作者 | 来源 |
 |------|--------|------|
+| [我的 AI 采纳之旅](works/hashimoto-ai-adoption-translation.md) | Mitchell Hashimoto | 个人博客 |
 | ⭐ [渴望了八年，用 AI 三个月造出来](works/maganti-eight-years-building-ai-translation.md) | Lalit Maganti | 个人博客 |
 | [用 Rust 重写 Bun](works/bun-in-rust-translation.md) | Jarred Sumner | Bun Blog |
 | [用一支并行 Claude 团队构建 C 编译器](works/anthropic-c-compiler-translation.md) | Nicholas Carlini | Anthropic |

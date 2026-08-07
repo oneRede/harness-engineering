@@ -813,6 +813,7 @@
 
 - **标题：** My AI Adoption Journey
 - **链接：** [mitchellh.com](https://mitchellh.com/writing/my-ai-adoption-journey)
+- **翻译：** [works/hashimoto-ai-adoption-translation.md](../works/hashimoto-ai-adoption-translation.md)
 - **作者：** Mitchell Hashimoto（HashiCorp 联合创始人，Ghostty 作者） | **日期：** 2026-02-05
 - **核心：** 六步渐进采纳路线：放弃聊天机器人 → 复现自己的工作（手工做一遍再逼智能体做出同质结果）→ 日终智能体 → 外包稳赢任务 → 工程化 harness → 始终有智能体在跑。第 5 步给出了被业界广泛引用的 harness engineering 定义。多方学科史梳理公认本文是该术语的叫响者（与 OpenAI 原文同月）。原为本仓库"延伸阅读"，现升格为编号条目。
 
