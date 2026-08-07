@@ -72,6 +72,7 @@ sourceFigureCount: # 原文插图数（数字；null = 原文不可得、未审�
 | [orchestrator-tax-translation.md](orchestrator-tax-translation.md) | The Orchestrator's Tax | Rahul Garg / Martin Fowler |
 | [agent-harness-arc-agi-translation.md](agent-harness-arc-agi-translation.md) | Agent Harness Design: Why an ARC-AGI-3 Score Tripled | Umesh Malik / 个人博客 |
 | [claude-getting-started-loops-translation.md](claude-getting-started-loops-translation.md) | Loop engineering: Getting started with loops | Delba de Oliveira, Michael Segner / Claude.com |
+| [anthropic-harness-long-running-translation.md](anthropic-harness-long-running-translation.md) | Harness design for long-running application development | Prithvi Rajasekaran / Anthropic Labs |
 
 ### 中文转译 / 二手资料
 

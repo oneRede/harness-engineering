@@ -134,6 +134,7 @@
 
 - **标题：** Harness design for long-running application development
 - **链接：** [anthropic.com](https://www.anthropic.com/engineering/harness-design-long-running-apps)
+- **翻译：** [works/anthropic-harness-long-running-translation.md](../works/anthropic-harness-long-running-translation.md)
 - **作者：** Prithvi Rajasekaran (Anthropic Labs) | **日期：** 2026-03-24
 - **核心：** Anthropic 官方工程博客，GAN 启发的三智能体架构实战，从前端设计到全栈自主编码
 
