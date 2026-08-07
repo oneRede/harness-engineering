@@ -89,7 +89,9 @@ sourceFigureCount: # 原文插图数（数字；null = 原文不可得、未审�
 
 | 文件 | 原文 / 来源 | 作者 |
 |------|------|------|
+| [openai-harness-engineering-original-zh.md](openai-harness-engineering-original-zh.md) | Harness engineering: leveraging Codex in an agent-first world（OpenAI 官方中文版） | Ryan Lopopolo (OpenAI) |
 | [dongxi-subagent-original.md](dongxi-subagent-original.md) | Harness 系列文章之 7：关于 subagent（X status） | 马东锡 NLP（@dongxi_nlp） |
+| [dongxi-harness-product-original.md](dongxi-harness-product-original.md) | Harness 才是产品：决定 Coding Agent 体验的核心架构（X / SOTA Sync） | 马东锡 NLP（@dongxi_nlp） |
 
 ### 原创文章
 

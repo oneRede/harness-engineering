@@ -20,6 +20,7 @@
 
 - **标题：** Harness engineering: leveraging Codex in an agent-first world
 - **链接：** [openai.com](https://openai.com/zh-Hans-CN/index/harness-engineering/)
+- **原文收录：** [works/openai-harness-engineering-original-zh.md](../works/openai-harness-engineering-original-zh.md)（官方中文版）
 - **作者：** Ryan Lopopolo | **日期：** 2026-02-11
 - **核心：** 3 人团队用 Codex 从空仓库到 100 万行代码，零手写代码。提出六大概念：仓库即记录系统、地图而非手册、机械化执行、智能体可读性、吞吐量改变合并理念、熵管理。
 - **关联：** 本仓库的学习起点，所有概念笔记的来源
@@ -1033,6 +1034,7 @@
 
 - **标题：** Harness 才是产品：决定 Coding Agent 体验的不是 Model，是它周围的整套 Runtime（Harness 系列）
 - **链接：** [SOTA Sync 转载页](https://sotasync.com/reader/2026-06-09-dongxi-nlp-harness-is-the-product/)（原文发布于 X @dongxi_nlp，原帖需登录访问，本条目暂链转载页）
+- **原文收录：** [works/dongxi-harness-product-original.md](../works/dongxi-harness-product-original.md)
 - **作者：** 马东锡 NLP (@dongxi_nlp) | **日期：** 2026-06
 - **核心：** 把系列观点收束成一条产品论断：聊 coding agent 第一个该问的不是"用哪个 model"，而是"**Harness 到底负责什么**"。coding agent = 把 model 放进一套 runtime（查真实 repo、请求 tool、编辑文件、跑检查、记住发生过什么、多轮推进）——这层 runtime 就是 harness，"对 coding agent 来说，harness 本身就是 product"。
 
