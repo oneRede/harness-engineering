@@ -114,6 +114,7 @@
 
 - **标题：** The Anatomy of an Agent Harness
 - **链接：** [blog.langchain.com](https://blog.langchain.com/the-anatomy-of-an-agent-harness/)
+- **翻译：** [works/langchain-anatomy-translation.md](../works/langchain-anatomy-translation.md)
 - **作者：** Vivek Trivedy | **日期：** 2026-03
 - **核心：** 给出 harness 的精确定义和完整组件清单
 
